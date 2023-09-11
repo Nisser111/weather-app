@@ -6,9 +6,41 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css' integrity='sha512-KOWhIs2d8WrPgR4lTaFgxI35LLOp5PRki/DxQvb7mlP29YZ5iJ5v8tiLWF7JLk5nDBlgPP1gHzw96cZ77oD7zQ==' crossorigin='anonymous'/>
 </head>
 <body>
-    <h1 style="text-align: center;">WEATHER APP <br> comming soon</h1>
+    <header>
+        <section class="app-name">
+            <h1>WEATHER APP</h1>
+        </section>
+        
+        <nav>
+            <div class="search-wrapper">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" id="locationSearch" placeholder="Search new places">
+                <button id="getLocationBtn"><i class="fa-solid fa-location-dot"></i></button>
+            </div>
+
+            <div class="controls-wrapper">
+                <button id="settingsBtn"><i class="fa-solid fa-gear"></i></button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        
+
+        <section class="main-data">
+            
+        </section>
+        <section class="hour-forecast"></section>
+        <section class="air-condition"></section>
+    </main>
+
+    <aside class="three-days-forecast">
+
+    </aside>
 
     <script src="app.js"></script>
 </body>
