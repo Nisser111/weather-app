@@ -1,0 +1,31 @@
+<svg id="Breezy_Snow" data-name="Breezy Snow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="66.969" height="44.031" viewBox="0 0 66.969 44.031">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #00b4f1;
+        filter: url(#filter);
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #daecf9;
+        filter: url(#filter-2);
+      }
+    </style>
+    <filter id="filter" x="429.969" y="378.969" width="65" height="34" filterUnits="userSpaceOnUse">
+      <feImage preserveAspectRatio="none" x="429.969" y="378.969" width="65" height="34" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNjUiIGhlaWdodD0iMzQiIHZpZXdCb3g9IjAgMCA2NSAzNCI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgZmlsbDogdXJsKCNsaW5lYXItZ3JhZGllbnQpOwogICAgICB9CiAgICA8L3N0eWxlPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJsaW5lYXItZ3JhZGllbnQiIHgxPSIxNS41IiB5MT0iMzQiIHgyPSI0OS41IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzAwYWVlZiIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMzMGM1ZjQiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IGNsYXNzPSJjbHMtMSIgd2lkdGg9IjY1IiBoZWlnaHQ9IjM0Ii8+Cjwvc3ZnPgo="/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-2" x="428" y="405" width="34" height="18" filterUnits="userSpaceOnUse">
+      <feImage preserveAspectRatio="none" x="428" y="405" width="34" height="18" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzQiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAzNCAxOCI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgZmlsbDogdXJsKCNsaW5lYXItZ3JhZGllbnQpOwogICAgICB9CiAgICA8L3N0eWxlPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJsaW5lYXItZ3JhZGllbnQiIHgxPSI4IiB5MT0iMTgiIHgyPSIyNiIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNkMWU4ZjgiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZTFlZWY5Ii8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCBjbGFzcz0iY2xzLTEiIHdpZHRoPSIzNCIgaGVpZ2h0PSIxOCIvPgo8L3N2Zz4K"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="breezy" class="cls-1" d="M479.279,412.972a5.086,5.086,0,0,1-4.725-7.027H445.3a1.583,1.583,0,1,1,0-3.166h33.854c0.022,0,.043.006,0.064,0.007s0.042-.007.064-0.007A5.1,5.1,0,1,1,479.279,412.972Zm10.58-8.748a5.1,5.1,0,0,1-5.111-5.1,5.048,5.048,0,0,1,.386-1.931H431.543a1.583,1.583,0,1,1,0-3.165h58.188c0.022,0,.042,0,0.064.006s0.042-.006.064-0.006A5.1,5.1,0,1,1,489.859,404.224Zm-10.58-25.27a5.086,5.086,0,0,0-4.725,7.027H455.876a1.583,1.583,0,1,0,0,3.165h23.275c0.022,0,.043,0,0.064-0.006s0.042,0.006.064,0.006A5.1,5.1,0,1,0,479.279,378.954Z" transform="translate(-428 -378.969)"/>
+  <path id="snow-02" class="cls-2" d="M430,412a2,2,0,1,1-2,2,2,2,0,0,1,2-2m10,0a2,2,0,1,1-2,2,2,2,0,0,1,2-2m10,0a2,2,0,1,1-2,2,2,2,0,0,1,2-2m10,0a2,2,0,1,1-2,2,2,2,0,0,1,2-2m-23,9a2,2,0,1,1-2-2A2,2,0,0,1,437,421Zm10,0a2,2,0,1,1-2-2A2,2,0,0,1,447,421Zm10,0a2,2,0,1,1-2-2A2,2,0,0,1,457,421Zm-22-12a2,2,0,1,1,2-2m0,0a2,2,0,0,1-2,2" transform="translate(-428 -378.969)"/>
+</svg>
