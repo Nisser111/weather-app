@@ -27,6 +27,8 @@ Weather app with 3 days forecast.
 
 ## 🔒 License
 
+### app
+
     MIT License
 
     Copyright &copy; 2023 Miłosz Kułak
@@ -49,6 +51,11 @@ Weather app with 3 days forecast.
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
     SOFTWARE.
 
+### weather state icons
+
+https://dribbble.com/shots/3761552-Free-Weather-Icons
+
+https://icofont.com/license
 ## 📧 Contact me
 
 - [Github](https://www.github.com/Nisser111)
