@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="EN-en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather forecast</title>
+
+    <link rel="stylesheet" href="./styles/style.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css"
+      integrity="sha512-KOWhIs2d8WrPgR4lTaFgxI35LLOp5PRki/DxQvb7mlP29YZ5iJ5v8tiLWF7JLk5nDBlgPP1gHzw96cZ77oD7zQ=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href=".\styles\icofont\icofont.min.css" />
+
+  </head>
+  <body class="day">
+    <header>
+      <section class="app-name">
+        <h1>WEATHER FORECAST</h1>
+      </section>
+
+      <nav>
+        <div class="search-wrapper">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="search"
+            id="locationSearch"
+            placeholder="Search new places"
+          />
+          <button id="getLocationBtn">
+            <i class="fa-solid fa-location-dot"></i>
+          </button>
+        </div>
+
+        <div class="controls-wrapper">
+          <button id="settingsBtn"><i class="fa-solid fa-gear"></i></button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="main-data">
+        <div class="details-container">
+          <div class="location-container">
+            <h2 id="location">Warsaw</h2>
+            <p id="forecast-date">Today</p>
+          </div>
+
+          <div class="temperature-and-details-container">
+            <p id="temperature">26°</p>
+            <p class="sun-states">
+              <span>
+                <i class="icofont-sun-rise"></i>
+                &nbsp;<span id="sunrise">6:09 AM</span>
+              </span>
+              <span>
+                <i class="icofont-sun-set"></i>
+                &nbsp;<span id="sunset">7:14 PM</span>
+              </span>
+            </p>
+          </div>
+        </div>
+
+        <div class="weather-icon-container">
+          <img
+            src="./images/weather-icons/party-cloudy.svg"
+            alt="Party cloudy"
+          />
+        </div>
+      </section>
+
+      <section class="carusel-wrapper">
+
+        <div class="scrollBtn" id="previusBtn">
+          <i class="icofont-rounded-left"></i>
+        </div>
+        <div class="scrollBtn" id="nextBtn">
+          <i class="icofont-rounded-right"></i>
+        </div>
+        
+
+        <div class="hour-forecast">
+          <div class="single-hour">
+            <h5 class="hour">1:00 AM</h5>
+            <img
+              src="./images/weather-icons/mostly-cloudy.svg"
+              alt="Mostly cloudy"
+            />
+            <p class="temperature">20°</p>
+          </div>
+          <div class="single-hour">
+            <h5 class="hour">2:00 AM</h5>
+            <img
+              src="./images/weather-icons/mostly-cloudy.svg"
+              alt="Mostly cloudy"
+            />
+            <p class="temperature">21°</p>
+          </div>
+          <div class="single-hour">
+            <h5 class="hour">3:00 AM</h5>
+            <img
+              src="./images/weather-icons/party-cloudy.svg"
+              alt="Party cloudy"
+            />
+            <p class="temperature">23°</p>
+          </div>
+          <div class="single-hour">
+            <h5 class="hour">4:00 AM</h5>
+            <img
+              src="./images/weather-icons/party-cloudy.svg"
+              alt="Party cloudy"
+            />
+            <p class="temperature">23°</p>
+          </div>
+          <div class="single-hour">
+            <h5 class="hour">5:00 AM</h5>
+            <img
+              src="./images/weather-icons/mostly-sunny.svg"
+              alt="Mostly sunny"
+            />
+            <p class="temperature">24°</p>
+          </div>
+          <div class="single-hour">
+            <h5 class="hour">6:00 AM</h5>
+            <img
+              src="./images/weather-icons/party-cloudy.svg"
+              alt="Party cloudy"
+            />
+            <p class="temperature">25°</p>
+          </div>
+          <div class="single-hour">
+            <h5 class="hour">7:00 AM</h5>
+            <img
+              src="./images/weather-icons/party-cloudy.svg"
+              alt="Party cloudy"
+            />
+            <p class="temperature">25°</p>
+          </div>
+          <div class="single-hour">
+            <h5 class="hour">8:00 AM</h5>
+            <img
+              src="./images/weather-icons/party-cloudy.svg"
+              alt="Party cloudy"
+            />
+            <p class="temperature">25°</p>
+          </div>
+          <div class="single-hour">
+            <h5 class="hour">9:00 AM</h5>
+            <img
+              src="./images/weather-icons/party-cloudy.svg"
+              alt="Party cloudy"
+            />
+            <p class="temperature">25°</p>
+          </div>
+          <div class="single-hour">
+            <h5 class="hour">10:00 AM</h5>
+            <img
+              src="./images/weather-icons/party-cloudy.svg"
+              alt="Party cloudy"
+            />
+            <p class="temperature">25°</p>
+          </div>
+          <div class="single-hour">
+            <h5 class="hour">11:00 AM</h5>
+            <img
+              src="./images/weather-icons/party-cloudy.svg"
+              alt="Party cloudy"
+            />
+            <p class="temperature">25°</p>
+          </div>
+          <div class="single-hour">
+            <h5 class="hour">12:00 AM</h5>
+            <img
+              src="./images/weather-icons/party-cloudy.svg"
+              alt="Party cloudy"
+            />
+            <p class="temperature">25°</p>
+          </div>
+          <div class="single-hour">
+            <h5 class="hour">1:00 PM</h5>
+            <img
+              src="./images/weather-icons/party-cloudy.svg"
+              alt="Party cloudy"
+            />
+            <p class="temperature">25°</p>
+          </div>
+          <div class="single-hour">
+            <h5 class="hour">2:00 PM</h5>
+            <img
+              src="./images/weather-icons/party-cloudy.svg"
+              alt="Party cloudy"
+            />
+            <p class="temperature">25°</p>
+          </div>
+          <div class="single-hour">
+            <h5 class="hour">3:00 PM</h5>
+            <img
+              src="./images/weather-icons/party-cloudy.svg"
+              alt="Party cloudy"
+            />
+            <p class="temperature">25°</p>
+          </div>
+          <div class="single-hour">
+            <h5 class="hour">4:00 PM</h5>
+            <img
+              src="./images/weather-icons/party-cloudy.svg"
+              alt="Party cloudy"
+            />
+            <p class="temperature">25°</p>
+          </div>
+          <div class="single-hour">
+            <h5 class="hour">5:00 PM</h5>
+            <img
+              src="./images/weather-icons/party-cloudy.svg"
+              alt="Party cloudy"
+            />
+            <p class="temperature">25°</p>
+          </div>
+          <div class="single-hour">
+            <h5 class="hour">6:00 PM</h5>
+            <img
+              src="./images/weather-icons/party-cloudy.svg"
+              alt="Party cloudy"
+            />
+            <p class="temperature">25°</p>
+          </div>
+          <div class="single-hour">
+            <h5 class="hour">7:00 PM</h5>
+            <img
+              src="./images/weather-icons/party-cloudy.svg"
+              alt="Party cloudy"
+            />
+            <p class="temperature">25°</p>
+          </div>
+          <div class="single-hour">
+            <h5 class="hour">8:00 PM</h5>
+            <img
+              src="./images/weather-icons/party-cloudy.svg"
+              alt="Party cloudy"
+            />
+            <p class="temperature">25°</p>
+          </div>
+          <div class="single-hour">
+            <h5 class="hour">9:00 PM</h5>
+            <img
+              src="./images/weather-icons/party-cloudy.svg"
+              alt="Party cloudy"
+            />
+            <p class="temperature">25°</p>
+          </div>
+          <div class="single-hour">
+            <h5 class="hour">10:00 PM</h5>
+            <img
+              src="./images/weather-icons/party-cloudy.svg"
+              alt="Party cloudy"
+            />
+            <p class="temperature">25°</p>
+          </div>
+          <div class="single-hour">
+            <h5 class="hour">11:00 PM</h5>
+            <img
+              src="./images/weather-icons/party-cloudy.svg"
+              alt="Party cloudy"
+            />
+            <p class="temperature">25°</p>
+          </div>
+          <div class="single-hour">
+            <h5 class="hour">12:00 PM</h5>
+            <img
+              src="./images/weather-icons/party-cloudy.svg"
+              alt="Party cloudy"
+            />
+            <p class="temperature">25°</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="air-condition"></section>
+    </main>
+
+    <aside class="three-days-forecast"></aside>
+
+    <script src="./scripts/app.js" type="module"></script>
+  </body>
+</html>
