@@ -7,7 +7,7 @@
 
 Weather app with 3 days forecast.
 
-<h2 align="center"><a href="https://nisser111.github.io/weather-app/">DEMO</a></h2>
+<h2 align="center"><a href="https://weather-app-by-nisser111.netlify.app/">DEMO</a></h2>
 
 <br>
 
