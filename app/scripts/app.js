@@ -1,9 +1,18 @@
-import { dragging, dragStart, dragStop, moveCarusel} from "./hour-forecast-carusel.js";
+import { dragging, dragStart, dragStop, moveCarusel } from "./hour-forecast-carusel.js";
+import { loadHumidityChart } from "./humidity-chart-load.js";
 
-// Hour forecast scroll
-const carusel = document.querySelector(".hour-forecast");
-carusel.addEventListener("mousedown", dragStart);
-carusel.addEventListener("mousemove", dragging);
-carusel.addEventListener("mouseup", dragStop);
+window.onload = () => {
+  // Hour forecast scroll
+  const carusel = document.querySelector(".hour-forecast");
+  carusel.addEventListener("mousedown", dragStart);
+  carusel.addEventListener("mousemove", dragging);
+  carusel.addEventListener("mouseup", dragStop);
 
-moveCarusel();
+  // Initialization hour forecast carusel
+  moveCarusel();
+
+  // Load humidity chart
+  loadHumidityChart();
+
+  
+};

@@ -15,7 +15,7 @@
       hsla(195, 86%, 50%, 1) 0%,
       hsla(236, 93%, 65%, 1) 100%
     );
-  --secondaryBg: hsla(0, 0%, 100%, 0.4);
+  --secondaryBg: hsla(0, 0%, 100%, 0.3);
   --hourForecastScrollBtnBg: linear-gradient(
     270deg,
     transparent 0%,
@@ -41,12 +41,11 @@ body {
 }
 
 body.day {
-  --pageBg: hsla(195, 86%, 50%, 1)
-    linear-gradient(
-      180deg,
-      hsla(195, 86%, 50%, 1) 0%,
-      hsla(236, 93%, 65%, 1) 100%
-    );
+  --pageBg: linear-gradient(
+    160deg,
+    hsla(199, 92%, 47%, 1) 0%,
+    hsla(216, 100%, 41%, 1) 100%
+  );
 }
 
 body.night {
@@ -92,7 +91,7 @@ body > header nav button {
 }
 
 .hour-forecast,
-.air-condition { 
+.air-condition {
   box-shadow: 0px 0px 10px -5px rgba(66, 68, 90, 1);
 }
 
@@ -245,7 +244,7 @@ main {
   width: calc(var(--leftSideWidth) - 3.7vw);
   height: 15vh;
   margin: 2.5vh 0;
-  white-space: nowrap; 
+  white-space: nowrap;
 }
 
 .scrollBtn {
@@ -255,7 +254,7 @@ main {
   transform: translateY(-50%);
   padding: 0.7%;
   border-radius: 50%;
-  opacity: 0; 
+  opacity: 0;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -275,7 +274,7 @@ main {
   opacity: 0.8;
 }
 
-.scrollBtn:active  {
+.scrollBtn:active {
   background-color: rgba(49, 49, 49, 0.4);
 }
 
@@ -337,6 +336,14 @@ main {
 
 .single-hour p {
   font-size: clamp(18px, 1vw, 26px);
+  display: flex;
+  align-items: center;
+}
+
+.single-hour p i {
+  font-size: 0.6em;
+  margin-left: 6px;
+  margin-right: 3px;
 }
 
 /* Air Condition */
@@ -345,16 +352,114 @@ main {
   height: 30vh;
   background: var(--secondaryBg);
   border-radius: var(--frameRadius);
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .air-condition > header {
+  width: 100%;
+  height: 20%;
   padding: 1% 2.5%;
   text-transform: uppercase;
-  
 }
 
-.air-condition > header h4 {
-  font-size: clamp(1rem, 2.3vw, 1.15rem);
+.air-condition > header h3 {
+  font-size: clamp(1.2rem, 2.5vw, 1.3rem);
+}
+
+.air-condition-details {
+  height: 80%;
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+
+/* Humidity chart */
+.humidity-chart {
+  position: relative;
+  width: 50%;
+  aspect-ratio: 1 / 1;
+}
+
+.humidity-chart svg {
+  width: 100%;
+  height: 100%;
+}
+
+.humidity-chart svg path {
+  will-change: auto;
+  stroke-width: 15px;
+  stroke-miterlimit: round;
+  transition: stroke-dashoffset 850ms ease-in-out;
+}
+
+.humidity-chart svg path.bg {
+  stroke: var(--secondaryBg);
+}
+
+.humidity-chart svg path.meter {
+  stroke: #ffffff;
+}
+
+.humidity-chart-value {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: clamp(2rem, 3vw, 2.7rem);
+  font-weight: 700;
+}
+
+.humidity-chart-title {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: clamp(1.2rem, 2.5vw, 1.4rem);
+  text-transform: uppercase;
+}
+
+.other-details-list {
+  list-style: none;
+  font-size: clamp(1rem, 1.3vw, 1.5rem);
+  margin-left: 4%;
+}
+
+.other-details-list li {
+  font-size: 0.8em;
+}
+
+.other-details-list .value {
+  font-weight: 700;
+}
+
+/* Wind details */
+.wind-details {
+  width: 40%;
+  height: 80%;
+  margin-bottom: 5%;
+  display: flex;
+  align-items: center;
+}
+
+.wind-details img {
+  height: 80%;
+  width: 50%;
+  transform: scaleX(-1);
+}
+
+.wind-details-wind-speed {
+  font-size: 1.5em !important;
+  font-weight: 700;
+}
+
+.wind-details-wind-direction {
+  font-size: 1em !important;
+}
+
+.wind-details-wind-gust {
+  font-size: 0.8em;
 }
 
 aside {
