@@ -238,9 +238,10 @@ main {
 /* Hour forecast */
 .carusel-wrapper {
   position: relative;
-  width: calc(var(--leftSideWidth) - 3.7vw);
+  width: var(--leftSideWidth);
   height: 15vh;
   margin: 2.5vh 0;
+  margin-right: 1.5vw;
   white-space: nowrap;
 }
 
@@ -345,9 +346,10 @@ main {
 
 /* Air Condition */
 .air-condition {
-  width: calc(var(--leftSideWidth) - 3.7vw);
+  width: (--leftSideWidth);
   height: 30vh;
   background: var(--secondaryBg);
+  margin-right: 1.5vw;
   border-radius: var(--frameRadius);
   display: flex;
   justify-content: space-evenly;
@@ -491,7 +493,6 @@ main {
 }
 
 /* Three days forecast */
-
 .three-days-forecast {
   width: 100%;
   height: calc(52.5vh - max(2vh, 16px));
@@ -521,9 +522,9 @@ main {
   width: 100%;
   background: var(--overlayBg);
   margin: 5px 0;
-  padding: max(3%, 9px) max(2%, 7px);
+  padding: max(3%, 9px) max(5%, 12px);
   border-radius: 15px;
-  font-size: clamp(18px, 1vw, 26px);
+  font-size: clamp(16px, 2vh, 26px);
   display: flex;
   flex-direction: column;
   box-shadow: 0px 0px 4px -3px rgb(0, 0, 0);
@@ -531,15 +532,17 @@ main {
 
 .three-days-forecast-list h4 {
   height: 1em;
-  text-transform: uppercase;
+  text-transform: capitalize;
   line-height: 1.1em;
-  font-size: 1.2em;
-  border-bottom: 1px solid black;
+  font-size: 1.1em;
+  font-weight: normal;
+  /* border-bottom: 1px solid black; */
 }
 
 .three-days-forecast-list li .content {
   height: calc(100% - 1em);
   display: flex;
+  justify-content: space-between;
 }
 
 .weahter-condition-image {
@@ -554,26 +557,27 @@ main {
 
 .weahter-condition-image img {
   width: 100%;
+  padding: 5%;
 }
 
 .three-days-forecast-list .column {
   width: 34.5%;
-  margin: 0 2%;
+  margin: 0 4%;
+}
+
+.weather-condition-text {
+  font-weight: 700;
+}
+
+.percipitate-chance i {
+  font-size: 0.9em;
 }
 
 .forecast-list-temperature {
   font-size: 1.7em;
 }
 
-.three-days-forecast-list .column :where(.day) {
-  font-weight: 700;
-}
-
-.three-days-forecast-list .column :where(.night) {
-  opacity: 0.9;
-}
-
-.weather-condition-text {
+.forecast-list-temperature span:first-child {
   font-weight: 700;
 }
 
