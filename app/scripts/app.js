@@ -1,4 +1,10 @@
-import { dragging, dragStart, dragStop, moveCarusel } from "./hour-forecast-carusel.js";
+import {
+  dragging,
+  dragStart,
+  dragStop,
+  moveCarusel,
+  hideArrowBtns,
+} from "./hour-forecast-carusel.js";
 import { loadHumidityChart } from "./humidity-chart-load.js";
 import { getCurrentDateInfo } from "./clock-and-this-day.js";
 
@@ -8,6 +14,7 @@ window.onload = () => {
   carusel.addEventListener("mousedown", dragStart);
   carusel.addEventListener("mousemove", dragging);
   carusel.addEventListener("mouseup", dragStop);
+  carusel.addEventListener("mouseover", hideArrowBtns);
 
   // Initialization hour forecast carusel
   moveCarusel();
@@ -20,10 +27,9 @@ window.onload = () => {
     document.querySelector(".clock-and-current-date").children
   );
   let clockReloadInterval = setInterval(() => {
-    const {time: digitalClockTime, date: digitalClockDate } = getCurrentDateInfo();
+    const { time: digitalClockTime, date: digitalClockDate } =
+      getCurrentDateInfo();
     clockNode.innerText = digitalClockTime;
     dateNode.innerText = digitalClockDate;
-  }, 1000)
-
-
+  }, 1000);
 };
