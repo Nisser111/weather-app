@@ -30,6 +30,7 @@ const moveCarusel = () => {
     btn.addEventListener("click", (e) => {
       carusel.scrollLeft +=
         btn.id === "previusBtn" ? -firstCardWidth : firstCardWidth;
+        hideArrowBtns();
     });
   });
 };
