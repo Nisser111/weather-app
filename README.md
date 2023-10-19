@@ -11,7 +11,7 @@ This Weather App provides a convenient and comprehensive weather forecast for up
 <h2 align="center"><a href="https://weather-app-by-nisser111.netlify.app/">DEMO</a></h2>
 
 ### Page mockup
-![Page mockup](readme-src\image.png)
+![Page mockup](./readme-src\image.png)
 
 <br>
 
